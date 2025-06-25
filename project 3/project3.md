@@ -1,7 +1,18 @@
 # Advanced Recurrent Neural Network Architectures for Tweet Classification
 
-**Author:** Konstantinos Dimitrakopoulos  
-**ID:** 1115201500034
+## Introduction
+
+This report presents a comprehensive exploration of advanced recurrent neural network (RNN) architectures for the task of tweet classification. The study investigates the effectiveness of various deep learning models, including LSTM, GRU, and hybrid LSTM-GRU networks, in handling the unique challenges posed by social media text data. The work is motivated by the need for robust, scalable, and accurate models capable of understanding and categorizing tweets, which are often short, noisy, and rich in informal language and entities.
+
+## Problem Description
+
+The primary objective is to develop and optimize neural network models for classifying tweets into predefined categories. Tweets present several challenges for natural language processing, including:
+- Short and context-limited text
+- Frequent use of slang, abbreviations, and emojis
+- Presence of links, hashtags, mentions, and other Twitter-specific entities
+- Class imbalance in the dataset
+
+To address these challenges, the project implements a sophisticated preprocessing pipeline, evaluates multiple embedding strategies (including GloVe and Twitter-specific embeddings), and systematically experiments with a range of RNN-based architectures. The goal is to identify the most effective model and preprocessing combination for accurate tweet classification, while also providing insights into the impact of architectural choices and optimization techniques.
 
 ---
 
@@ -242,7 +253,7 @@ This section details the optimization strategies applied to the best-performing 
 The best model (test 34) was further evaluated with alternative preprocessing strategies (P1–P8). Results are summarized below:
 
 | No | Model | Gradient Clipping | Dropout | Loss (Train/Val) | Score (Train/Val) | Episodes | Comments |
-|----|-------|------------|------------------|-------------------|----|----------|
+|----|-------|------------|------------------|-------------------|----|----------|------------|
 | 1 | 34 with preprocessing P2 | 3 | 0.2 | 0.6835/0.7110 | 0.65149/0.62560 | 39 | High score, low error, good convergence. |
 | 2 | 34 with preprocessing P3 | 3 | 0.2 | 0.7008/0.7308 | 0.63269/0.5990 | 49 | Good model, good convergence. |
 | 3 | 34 with preprocessing P5 | 3 | 0.2 | 0.67689/0.7116 | 0.65198/0.61822 | 47 | Good model, good score and error. |
@@ -321,3 +332,14 @@ The following table compares the RNN and DNN models on the dataset:
 - The DNN-Embeddings model from Project 2 outperformed the RNN model in this context.
 - More complex architectures do not always guarantee better results; model selection should be data-driven.
 - Further improvements may be possible with advanced architectures (e.g., BERT) or enhanced class balancing techniques.
+
+---
+
+## Conclusion
+
+This study demonstrates that while advanced RNN architectures such as LSTM, GRU, and their hybrids can achieve strong performance on tweet classification tasks, simpler deep neural network (DNN) models with well-chosen embeddings may outperform more complex recurrent models in certain contexts. Key findings include:
+- The importance of tailored preprocessing for maximizing embedding coverage and model performance
+- The limited benefit of hybrid and attention-based architectures for this specific dataset
+- The persistent challenge of class imbalance, which was only partially mitigated by weighted loss functions
+
+Future work may explore transformer-based models (e.g., BERT), data augmentation, and more sophisticated class balancing techniques to further improve results. Overall, the project provides a robust framework and valuable insights for practitioners seeking to apply deep learning to social media text classification problems.
