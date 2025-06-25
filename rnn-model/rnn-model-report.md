@@ -326,7 +326,7 @@ The following table compares the RNN and DNN models on the dataset:
 
 | RNN model | DNN model |
 |-----------|-----------|
-| ![RNN model performance](img/49.png) | ![DNN model performance](../project%202/img/model-emb.png) |
+| ![RNN model performance](img/49.png) | ![DNN model performance](../dnn-model/img/model-emb.png) |
 
 **Summary:**
 - The DNN-Embeddings model from Project 2 outperformed the RNN model in this context.
