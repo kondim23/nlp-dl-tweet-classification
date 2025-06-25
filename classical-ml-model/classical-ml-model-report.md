@@ -1,4 +1,4 @@
-# Project 1: Classical Machine Learning for Tweet Classification
+# Classical Machine Learning for Tweet Classification
 
 This project presents a robust pipeline for tweet classification using classical machine learning. The approach demonstrates practices in data preprocessing, feature engineering, model selection, hyperparameter optimization, and evaluation, with a focus on reproducibility and scalability.
 
