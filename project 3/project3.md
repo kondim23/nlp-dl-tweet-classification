@@ -106,9 +106,9 @@ Experiments were conducted on multi-layer bidirectional LSTM networks. The table
 
 | Test 1                | Test 3                | Test 4                | Test 5                |
 |-----------------------|-----------------------|-----------------------|-----------------------|
-| ![Test 1](img/1.png) <br> *Test 1* | ![Test 3](img/3.png) <br> *Test 3* | ![Test 4](img/4.png) <br> *Test 4* | ![Test 5](img/5.png) <br> *Test 5* |
+| ![Test 1](img/1.png) <br> *Test 1* | ![Test 3](img/2.png) <br> *Test 3* | ![Test 4](img/3.png) <br> *Test 4* | ![Test 5](img/4.png) <br> *Test 5* |
 | Test 6                | Test 7                | Test 8                | Test 9                |
-| ![Test 6](img/6.png) <br> *Test 6* | ![Test 7](img/7.png) <br> *Test 7* | ![Test 8](img/8.png) <br> *Test 8* | ![Test 9](img/9.png) <br> *Test 9*
+| ![Test 6](img/5.png) <br> *Test 6* | ![Test 7](img/6.png) <br> *Test 7* | ![Test 8](img/7.png) <br> *Test 8* | ![Test 9](img/8.png) <br> *Test 9*
 
 ---
 
@@ -130,7 +130,7 @@ The vanishing gradients phenomenon appeared in test 10 and was not successfully 
 
 | Test 12                | Test 13                | Test 14                |
 |------------------------|------------------------|------------------------|
-| ![Test 12](img/12.png) <br> *Test 12* | ![Test 13](img/13.png) <br> *Test 13* | ![Test 14](img/14.png) <br> *Test
+| ![Test 12](img/9.png) <br> *Test 12* | ![Test 13](img/10.png) <br> *Test 13* | ![Test 14](img/11.png) <br> *Test
 
 ---
 
@@ -160,7 +160,7 @@ The same process was followed for combined multi-layer LSTM-GRU networks. The re
 
 | Test 18                | Test 21                | Test 22                | Test 23                | Test 24                |
 |------------------------|------------------------|------------------------|------------------------|------------------------|
-| ![Test 18](img/18.png) <br> *Test 18* | ![Test 21](img/21.png) <br> *Test 21* | ![Test 22](img/22.png) <br> *Test 22* | ![Test 23](img/23.png) <br> *Test 23* | ![Test 24](img/24.png) <br> *Test 24* |
+| ![Test 18](img/12.png) <br> *Test 18* | ![Test 21](img/13.png) <br> *Test 21* | ![Test 22](img/14.png) <br> *Test 22* | ![Test 23](img/15.png) <br> *Test 23* | ![Test 24](img/16.png) <br> *Test 24* |
 
 ---
 
@@ -181,7 +181,7 @@ The experiments yielded satisfactory results as seen in tests 42 and 44. More co
 
 | Test 42                | Test 44                | Test 45                |
 |------------------------|------------------------|------------------------|
-| ![Test 42](img/42.png) <br> *Test 42* | ![Test 44](img/44.png) <br> *Test 44* | ![Test 45](img/45.png) <br> *Test45* |
+| ![Test 42](img/31.png) <br> *Test 42* | ![Test 44](img/32.png) <br> *Test 44* | ![Test 45](img/33.png) <br> *Test45* |
 
 ---
 
@@ -190,6 +190,11 @@ The experiments yielded satisfactory results as seen in tests 42 and 44. More co
 Experiments were conducted on more complex networks combining LSTM-GRU layers with skip layers. The design and metric results are shown below.
 
 **Experiment 25:**
+
+| Architecture | Diagram |
+|-----------|-----------|
+| ![Architecture](img/50.png) | ![Diagram](img/18.png) |
+
 - Clip Gradients Norm: 2
 - Dropout: 0.2
 - Training Loss: 0.832539
@@ -202,6 +207,11 @@ Experiments were conducted on more complex networks combining LSTM-GRU layers wi
 Experiment 25 shows satisfactory results. No overfitting is observed and the training is correct. However, it does not represent the best metric performance.
 
 **Experiment 26:**
+
+| Architecture | Diagram |
+|-----------|-----------|
+| ![Architecture](img/51.png) | ![Diagram](img/17.png) |
+
 - Clip Gradients Norm: 2
 - Dropout: 0.2
 - Training Loss: 0.758902
@@ -214,6 +224,11 @@ Experiment 25 shows satisfactory results. No overfitting is observed and the tra
 The results are also satisfactory. The learning curves converge well and the final model is efficient.
 
 **Experiment 27:**
+
+| Architecture |
+|-----------|
+| ![Architecture](img/52.png) |
+
 - Clip Gradients Norm: 2
 - Dropout: 0.2
 - Training Loss: 0.98942534
@@ -338,13 +353,13 @@ Ultimately, the addition of the attention routine to this specific problem does 
 
 | Without Attention                                   | With Attention                                   |
 |----------------------------------------------|---------------------------------------------|
-| ![Without Attention](49.png) | ![With Attention](dnn_model_per.png)
+| ![Without Attention](47.png) | ![With Attention](img/48.png)
 
 ## The Final Model
 
 The final model selected is presented in test 49 and has the best performance on the evaluated metrics. Its learning diagrams are presented below:
 
-![Final Model](49.png)
+![Final Model](img/49.png)
 
 **Observations:**
 - There is very good convergence in the model, avoidance of the overfitting phenomenon, and a better description of the model from the ROC curves.
@@ -370,7 +385,7 @@ Below is the performance of the models on the dataset:
 
 | RNN model | DNN model |
 |-----------|-----------|
-| ![RNN model performance](rnn_model_performance.png) | ![DNN model performance](dnn_model_performance.png) |
+| ![RNN model performance](img/49.png) | ![DNN model performance](../project%202/img/model-emb.png) |
 
 Obviously, the best results are presented by the DNN-Embeddings model from Assignment 2. At first thought, a more complex system like the recurrent neural network used should adapt better to the problem data and produce better results. Despite multiple tests, this is not achieved, while many factors may influence this outcome, such as:
 - The problem may be better suited to a simpler (multinomial logistic regression/DNN) or more complex (BERT) model, than the model of this assignment.
