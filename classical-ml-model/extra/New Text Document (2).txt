@@ -1,2 +1,0 @@
-Best Score: 0.6628358637145505
-Best Hyperparameters: {'C': 9.667007364168388, 'class_weight': 'balanced', 'penalty': 'l1', 'solver': 'liblinear'}
