@@ -320,7 +320,7 @@ Class imbalance was a significant challenge, particularly for class 1, which com
 
 ---
 
-## Comparison with the DNN Model from Project 2
+## Comparison with the DNN Model
 
 The following table compares the RNN and DNN models on the dataset:
 
@@ -329,7 +329,7 @@ The following table compares the RNN and DNN models on the dataset:
 | ![RNN model performance](img/49.png) | ![DNN model performance](../dnn-model/img/model-emb.png) |
 
 **Summary:**
-- The DNN-Embeddings model from Project 2 outperformed the RNN model in this context.
+- The DNN-Embeddings model outperformed the RNN model in this context.
 - More complex architectures do not always guarantee better results; model selection should be data-driven.
 - Further improvements may be possible with advanced architectures (e.g., BERT) or enhanced class balancing techniques.
 

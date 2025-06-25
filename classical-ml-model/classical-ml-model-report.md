@@ -22,7 +22,7 @@ Initial results indicated overfitting, as visualized below:
 
 | CountVectorizer | TF-IDF Vectorizer | HashingVectorizer |
 |:--------------:|:----------------:|:-----------------:|
-| ![CountVectorizer](img/CountVectorizer.png) | ![TF-IDF Vectorizer](img/tfidfVectorizer.png) | ![HashingVectorizer](img/HashingVectorizer.png) |
+| ![CountVectorizer](img/CountVectorizer.png) | ![TF-IDF Vectorizer](img/TfIdfVectorizer.png) | ![HashingVectorizer](img/HashingVectorizer.png) |
 
 ---
 
