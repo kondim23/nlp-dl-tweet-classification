@@ -81,9 +81,6 @@ Best combination: **{unique word freq, stop word freq, avg word length, POS freq
 |:--------------:|:----------------:|
 | ![CountVectorizer](img/CountVectorizer-feature-engineering.png) | ![TF-IDF Vectorizer](img/tfidfVectorizer-feature-engineering.png) |
 
-**References:**
-- [Analytics Vidhya: Feature Engineering in NLP](https://www.analyticsvidhya.com/blog/2021/04/a-guide-to-feature-engineering-in-nlp/)
-- [Medium: NLP Features](https://medium.com/swlh/nlp-all-them-features-every-feature-that-can-be-extracted-from-text-7032c0c87dee)
 
 ---
 
@@ -133,7 +130,7 @@ The final model, with optimized hyperparameters and engineered features, achieve
 
 ---
 
-## 7. Production-Ready Utilities
+## 7. Utilities
 
 Reusable utility functions were developed to support the pipeline:
 
